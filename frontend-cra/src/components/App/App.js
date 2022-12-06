@@ -1,15 +1,15 @@
 import React from "react";
-import { Redirect, Route, Switch, withRouter } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Navigation from "../Navigation/Navigation";
-import NavTab from "../NavTab/NavTab";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import Main from "../Main/Main";
 import Movies from "../Movies/Movies";
 import SavedMovies from "../SavedMovies/SavedMovies";
 import Profile from "../Profile/Profile";
+import { currentUser } from "../../utils/currentUser";
 
 function App() {
   const [loggedIn, setLoggedStatus] = React.useState(true);
@@ -26,18 +26,36 @@ function App() {
         {loggedIn && <Navigation />}
       </div>
 
-      {/* <Main/>   */}
 
       <Switch>
-        <Route path="/signin" component={Login}></Route>
-        <Route path="/signup" component={Register}></Route>
-        <Route path="/movies" component={Movies}></Route>
-        <Route path="/saved-movies" component={SavedMovies}></Route>
-        <Route path="/profile" component={Profile}></Route>
-        <Route exact path="/" component={Main}></Route>
+        <Route path="/signin">
+           <Login />
+        </Route>
+
+        <Route path="/signup">
+           <Register />
+        </Route>
+
+        <Route path="/movies">
+           <Movies />
+           <Footer />
+        </Route>
+
+        <Route path="/saved-movies">
+          <SavedMovies />
+          <Footer />
+        </Route>
+
+        <Route path="/profile">
+          <Profile user = {currentUser}/>
+        </Route> 
+           
+        <Route exact path="/">
+           <Main />
+           <Footer />
+        </Route>
       </Switch>
 
-      <Footer />
     </div>
   );
 }

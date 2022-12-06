@@ -1,0 +1,136 @@
+.profile {
+    height: 626px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.profile__title {
+    margin: 74px auto 0px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.05px;
+    color: #FFFFFF;
+}
+
+.profile__details {
+    margin: 123px auto 0px;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.profile__item__title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13.31px;
+    color: #FFFFFF;
+    text-align: left;
+    margin:0;
+}
+
+.ptofile__item__value {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13.31px;
+    color: #FFFFFF;
+    text-align: right;
+    margin:0;
+
+}
+
+.profile__underscore {
+    height: 1px;
+    margin: 17px 0 16px;
+    background-color: #424242 ;
+}
+
+.profile__nav {
+    margin: 220px auto 70px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__update {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.profile__exit {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15.73px;
+    color: #EE3465;
+    text-align: center;
+    margin: 16px 0 0;
+    padding: 0;
+
+}
+
+@media screen and (max-width: 800px) {
+    .profile {
+        height: 950px;
+    }
+    .profile__title {
+        margin: 236px auto 0px;
+    }
+
+    .profile__details {
+        margin: 96px auto 0px;
+    }
+
+    .profile__nav {
+        margin: 210px auto 269px ;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile {
+        height: 706px;
+    }
+    .profile__title {
+        margin: 70px auto 0px;
+    }
+    .profile__details {
+        margin: 80px auto 0px;
+        width: 260px;
+
+    }
+    
+    .profile__nav {
+        margin: 379px auto 40px ;
+    }
+
+    .profile__update {
+        font-size: 12px;
+        line-height: 14.52px;
+    }
+
+    .profile__exit {
+        font-size: 12px;
+        line-height: 14.52px;
+
+    }
+
+}

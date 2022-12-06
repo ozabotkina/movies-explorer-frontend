@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header(props) {
   return (
     <header className={props.colorClass}>
-      <Link to={"/main"}>
+      <Link to={"/"}>
         <img className="header__logo" src={logoPath} alt="место логотипа" />
       </Link>
 
@@ -19,7 +19,7 @@ function Header(props) {
             alt="короткое меню"
           />
           {/* Видно на размере больше 800. Откроет окно с профилем */}
-          <div className="header__profile-link">
+          <Link to={"/profile"} className="header__profile-link">
             <div className="header__profile-link__text"> Аккаунт </div>
             <div className="header__profile-link__placeholder">
               <img
@@ -28,7 +28,7 @@ function Header(props) {
                 alt="иконка человечка"
               />
             </div>
-          </div>
+          </Link>
         </>
       ) : (
         <div className="header__registration-menu">
