@@ -1,0 +1,15 @@
+.saved-movies__devider {
+  min-height: 213px;
+}
+
+@media screen and (max-width: 1200px) {
+  .saved-movies__devider {
+    min-height: 165px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .saved-movies__devider {
+    min-height: 140px;
+  }
+}

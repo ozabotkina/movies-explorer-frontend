@@ -15,3 +15,6 @@
 @import url(./components/MoviesCardList/MoviesCardList.css);
 @import url(./components/MoviesCard/MoviesCard.css);
 @import url(./components/More/More.css);
+@import url(./components/SaveButton/SaveButton.css);
+@import url(./components/UnsaveButton/UnsaveButton.css);
+@import url(./components/SavedMovies/SavedMovies.css);

@@ -1,0 +1,19 @@
+.save-status__unsave-button {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 21px;
+  height: 21px;
+  z-index: -1;
+  border-radius: 30px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #313131;
+  border: 0px;
+  background-image: url(../../images/icon__COLOR_icon-main.svg);
+  cursor: url("../../images/Layer\ 1\ 7.svg"), pointer;
+}
+
+.save-status__unsave-button_active {
+  z-index: 2;
+}

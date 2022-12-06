@@ -3,18 +3,14 @@ import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import More from "../More/More";
 import { movieCards } from "../../utils/movieCards";
 
-
-
 function Movies(props) {
-    return (
+  return (
+    <div className="movies">
+      <SearchForm />
+      <MoviesCardList cards={movieCards} />
+      <More />
+    </div>
+  );
+}
 
-<div className="movies">      
- <SearchForm />
- <MoviesCardList
-   cards = {movieCards}/>
- <More/>
-</div>  
-    ) ;
-    }
-    
 export default Movies;
