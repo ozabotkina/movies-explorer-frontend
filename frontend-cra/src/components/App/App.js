@@ -20,7 +20,7 @@ import Profile from "../Profile/Profile";
 
 function App() {
 
-  const [loggedIn, setLoggedStatus] = React.useState(false);  
+  const [loggedIn, setLoggedStatus] = React.useState(true);  
   
   return (
   <div className="page">
@@ -36,10 +36,10 @@ function App() {
        <Navigation/> }
   </div> 
 
-    <Main/>  
+    {/* <Main/>   */}
   
 
-  {/* <NavTab/>
+
   <Switch>
     <Route
       path="/signin"
@@ -66,7 +66,7 @@ function App() {
       component={Main}>
     </Route> 
   </Switch>
- */}
+
   <Footer/>
   </div> 
   );

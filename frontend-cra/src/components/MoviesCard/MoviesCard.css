@@ -1,0 +1,156 @@
+.movie-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    overflow-y:hidden;
+  }
+
+  .movie-card_hover{
+    cursor: url("../../images/Layer\ 1\ 7.svg"), pointer;
+  }
+
+
+.movie-card__image {
+    width: 360px;
+    height: 201px;
+    border-radius: 6px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    z-index:0;
+    object-fit: cover;
+}
+
+.movie-card__words {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 14px 14px 0;
+    height: 32px;
+}
+
+.movie-card__title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15.73px;
+    color: rgba(255, 255, 255, 1) ;
+    text-align: Left;
+    margin: 0;
+    max-width:  250px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.movie-card__duration {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 11px;
+    line-height:10px;
+    color: rgba(139,139,139,1) ;
+    text-align: center;
+    margin: 0;
+    background-color: #2F2F2F;
+    width: 52px;
+    height: 18px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.save-button {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 72px;
+    height: 21px;
+    border-radius: 20px;
+    z-index: -1;
+    margin:  14px 14px auto auto;
+    background-color: #313131 ;
+    border: 0px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 9px;
+    color: rgba(255, 255, 255, 1) ;
+    text-align: center;
+    cursor: url("../../images/Layer\ 1\ 7.svg"), pointer;
+
+}
+
+.save-button_active {
+    z-index: 2;
+}
+
+.saved {
+    width: 21px;
+    height: 21px;
+    z-index: 0;
+    background-image: url(../../images/save3.svg);
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin:  14px 14px auto auto;
+
+}
+
+.saved_active {
+ z-index: 2;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+    .movie-card{
+        height: 233px;
+    }
+
+    .movie-card__image {
+      
+    max-width: 339px;
+    max-height: 190px;
+    }
+
+    .movie-card__words {
+        padding: 25px 0px 0;
+        height: 18px;
+
+    }
+
+    .movie-card__title {
+       text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .movie-card{
+        height: 202px;
+    }
+
+    .movie-card__image {
+      
+    max-width: 300px;
+    max-height: 168px;
+    margin-bottom: 0px;
+    }
+
+    .movie-card__title {
+        font-size: 12px;
+        max-width:  240px;
+    }
+    
+    .movie-card__words {
+        padding: 16px 0px 0;
+        margin-top: 0;
+    }
+
+}

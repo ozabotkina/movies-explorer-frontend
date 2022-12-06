@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    column-gap: 18px;
+    column-gap: 16px;
     grid-column:1/2;
     grid-row: 1/2;
     background-color: transparent;
@@ -23,7 +23,6 @@
   }
 
   .header__navigation__link_active {
-    font-style: medium;
     font-weight: 500;
   
   }
