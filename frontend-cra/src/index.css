@@ -19,3 +19,12 @@
 @import url(./components/UnsaveButton/UnsaveButton.css);
 @import url(./components/SavedMovies/SavedMovies.css);
 @import url(./components/Profile/Profile.css);
+@import url(./components/Register/Register.css);
+@import url(./components/Login/Login.css);
+@import url(./components/Logo/Logo.css);
+@import url(./components/PopupWithForm/PopupWithForm.css);
+@import url(./components/ProfileMenu/ProfileMenu.css);
+@import url(./components/Portfolio/Portfolio.css);
+@import url(./components/Switch/Switch.css);
+@import url(./components/ErrorAPI/ErrorAPI.css);
+@import url(./components/Preloader/Preloader.css);

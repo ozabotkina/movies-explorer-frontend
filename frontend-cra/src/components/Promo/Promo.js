@@ -1,5 +1,3 @@
-import landingPath from "../../images/pic__COLOR_landing-logo.svg";
-
 function Promo(props) {
   return (
     <section className="promo">

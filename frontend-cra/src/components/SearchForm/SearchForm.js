@@ -1,20 +1,23 @@
+
+import Switch from "../Switch/Switch"
+
 function SearchForm(props) {
+
   return (
     <form className="search-form">
       <div className="search-form__wrap">
         <input type="text" className="search-form__input" placeholder="Фильм" />
-        <button type="submit" className="search-form__button">
+        <button type="submit" className="search-form__button link">
           Найти
         </button>
       </div>
 
-      <div className="switch">
-        <div className="switch-area">
-          <div className="switch__button"></div>
-        </div>
-        <div className="switch-label">Короткометражки</div>
-      </div>
-      <div className="search-form__underline"></div>
+    <div className = "search-form__switch">
+      <Switch />
+    </div>
+
+    <div className="search-form__underline"></div>
+
     </form>
   );
 }

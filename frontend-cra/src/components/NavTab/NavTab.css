@@ -13,10 +13,10 @@
 }
 
 .nav_tab__link {
-  /* text-decoration: underline; */
+  text-decoration: none;
   list-style-type: none;
 
-  font-family: "Inter";
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;

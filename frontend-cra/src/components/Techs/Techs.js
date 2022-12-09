@@ -1,6 +1,6 @@
 function Techs(props) {
   return (
-    <section className="techs">
+    <section className="techs" id="Techs">
       <h2 className="techs__title">Технологии</h2>
       <h3 className="techs__number">7 технологий</h3>
       <p className="techs__comment">

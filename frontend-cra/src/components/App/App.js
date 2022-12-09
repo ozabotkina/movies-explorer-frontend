@@ -10,35 +10,50 @@ import Movies from "../Movies/Movies";
 import SavedMovies from "../SavedMovies/SavedMovies";
 import Profile from "../Profile/Profile";
 import { currentUser } from "../../utils/currentUser";
+import ErrorAPI from "../ErrorAPI/ErrorAPI";
+
 
 function App() {
-  const [loggedIn, setLoggedStatus] = React.useState(true);
+  const [isNavigationOpen, setNavigation] = React.useState(false);
+  const loggedIn = true;
+  const isErrorOpen = false;
+  const isSearching = false;
+  // const [isErrorOpen, setErrorStatus] = React.useState(false);
+  // const [loggedIn, setLoggedStatus] = React.useState(true);
+  // const [isSearching, setSearchStatus] = React.useState(true);
+
+
+  function handleShortMenu() {
+    setNavigation(true);
+  }
+
+  function handleNavClose() {
+    setNavigation(false);
+  }
 
   return (
     <div className="page">
       <div className="topSection">
         <Header
           colorClass={loggedIn ? "header" : "header header_notlogged"}
-          loggedIn={loggedIn ? "true" : false}
+          loggedIn={loggedIn ? true : false}
+          shortMenuClick={handleShortMenu}
         />
-        {/* /* Видно только для loggedIn состояния и шире 800px экрана */}
-
-        {loggedIn && <Navigation />}
       </div>
-
 
       <Switch>
         <Route path="/signin">
-           <Login />
+          <Login />
         </Route>
 
         <Route path="/signup">
-           <Register />
+          <Register />
         </Route>
 
         <Route path="/movies">
-           <Movies />
-           <Footer />
+          <Movies 
+            isSearching = {isSearching} />
+          <Footer />
         </Route>
 
         <Route path="/saved-movies">
@@ -47,16 +62,20 @@ function App() {
         </Route>
 
         <Route path="/profile">
-          <Profile user = {currentUser}/>
-        </Route> 
-           
+          <Profile user={currentUser} />
+        </Route>
+
         <Route exact path="/">
-           <Main />
-           <Footer />
+          <Main />
+          <Footer />
         </Route>
       </Switch>
 
+      <Navigation isOpen={isNavigationOpen} onCloseClick={handleNavClose} />
+      <ErrorAPI isOpen={isErrorOpen}/>
+
     </div>
+
   );
 }
 
