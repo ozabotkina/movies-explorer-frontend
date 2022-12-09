@@ -7,17 +7,21 @@ function Footer(props) {
       <div className="footer__basement">
         <div className="footer__year">© 2022</div>
         <nav className="footer__links">
-          <a 
+          <a
             className="footer__link link"
-            href = "https://practicum.yandex.ru"
-            target="_blank" rel="noreferrer">
-              Яндекс.Практикум
+            href="https://practicum.yandex.ru"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Яндекс.Практикум
           </a>
-          <a 
+          <a
             className="footer__link link"
-            href = "https://github.com"
-            target="_blank" rel="noreferrer">
-              Github
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
           </a>
         </nav>
       </div>

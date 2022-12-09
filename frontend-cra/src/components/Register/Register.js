@@ -28,7 +28,6 @@ function Register(props) {
           id="name"
           className="entrance_form__input"
           placeholder="впишите почту"
-
           required
         />
         <span className="entrance_form__error entrance_form__error_visible"></span>
@@ -41,7 +40,6 @@ function Register(props) {
           id="name"
           className="entrance_form__input"
           placeholder="впишите пароль"
-
           required
         />
         <span className="entrance_form__error entrance_form__error_visible">

@@ -1,8 +1,6 @@
-
-import Switch from "../Switch/Switch"
+import Switch from "../Switch/Switch";
 
 function SearchForm(props) {
-
   return (
     <form className="search-form">
       <div className="search-form__wrap">
@@ -12,12 +10,11 @@ function SearchForm(props) {
         </button>
       </div>
 
-    <div className = "search-form__switch">
-      <Switch />
-    </div>
+      <div className="search-form__switch">
+        <Switch />
+      </div>
 
-    <div className="search-form__underline"></div>
-
+      <div className="search-form__underline"></div>
     </form>
   );
 }

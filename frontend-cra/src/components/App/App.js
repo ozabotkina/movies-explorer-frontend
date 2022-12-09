@@ -12,7 +12,6 @@ import Profile from "../Profile/Profile";
 import { currentUser } from "../../utils/currentUser";
 import ErrorAPI from "../ErrorAPI/ErrorAPI";
 
-
 function App() {
   const [isNavigationOpen, setNavigation] = React.useState(false);
   const loggedIn = true;
@@ -21,7 +20,6 @@ function App() {
   // const [isErrorOpen, setErrorStatus] = React.useState(false);
   // const [loggedIn, setLoggedStatus] = React.useState(true);
   // const [isSearching, setSearchStatus] = React.useState(true);
-
 
   function handleShortMenu() {
     setNavigation(true);
@@ -51,8 +49,7 @@ function App() {
         </Route>
 
         <Route path="/movies">
-          <Movies 
-            isSearching = {isSearching} />
+          <Movies isSearching={isSearching} />
           <Footer />
         </Route>
 
@@ -72,10 +69,8 @@ function App() {
       </Switch>
 
       <Navigation isOpen={isNavigationOpen} onCloseClick={handleNavClose} />
-      <ErrorAPI isOpen={isErrorOpen}/>
-
+      <ErrorAPI isOpen={isErrorOpen} />
     </div>
-
   );
 }
 

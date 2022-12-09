@@ -1,10 +1,10 @@
 import photoPath from "../../images/IMG_2110.jpg";
-import { GitHub } from "../../utils/portfolioLinks"
+import { GitHub } from "../../utils/portfolioLinks";
 
 function AboutMe(props) {
   return (
     <section className="about-me" id="AboutMe">
-      <h2  className="about-me__title">Студент</h2>
+      <h2 className="about-me__title">Студент</h2>
       <div className="about-me__intro">
         <div className="about-me__texts">
           <h3 className="about-me__name">Ольга</h3>
@@ -16,11 +16,13 @@ function AboutMe(props) {
             понравится. По окончании курса Яндекс Практикума я надеюсь стать
             частью профессиональной команды разработчиков.{" "}
           </p>
-          <a 
+          <a
             className="about-me__link link"
-            href = { GitHub.link }
-            target="_blank" rel="noreferrer">
-              Github
+            href={GitHub.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
           </a>
         </div>
         <img

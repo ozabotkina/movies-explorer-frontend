@@ -28,7 +28,7 @@
 }
 
 .movie-card__title {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 15.73px;
@@ -41,7 +41,7 @@
 }
 
 .movie-card__duration {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 10px;

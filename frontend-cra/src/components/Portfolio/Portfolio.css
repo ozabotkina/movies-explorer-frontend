@@ -8,7 +8,7 @@
 }
 
 .portfolio__title {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -19,7 +19,7 @@
 
 .portfolio__text {
   display: flex;
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 50px;
@@ -30,7 +30,6 @@
   margin-top: 0px;
   margin-bottom: 0px;
   text-decoration: none;
-
 }
 
 .portfolio__item {
@@ -50,7 +49,7 @@
 }
 
 .portfolio__icon {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 60px;
@@ -71,14 +70,11 @@
   }
   .portfolio__item {
     border-bottom: 1px solid #ffffff;
-  }  
+  }
   .portfolio__item_last {
     border-bottom: 0px;
   }
-  
 }
-
-
 
 @media screen and (max-width: 400px) {
   .portfolio {

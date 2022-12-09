@@ -8,7 +8,7 @@
 
 .profile__title {
   margin: 74px auto 0px;
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 29.05px;
@@ -31,7 +31,7 @@
 }
 
 .profile__item__title {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 11px;
   line-height: 13.31px;
@@ -41,7 +41,7 @@
 }
 
 .ptofile__item__value {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 13.31px;
@@ -64,7 +64,7 @@
 }
 
 .profile__update {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 15.73px;
@@ -75,7 +75,7 @@
 }
 
 .profile__exit {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 15.73px;

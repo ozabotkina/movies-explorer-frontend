@@ -8,13 +8,14 @@ function Movies(props) {
   return (
     <div className="movies">
       <SearchForm />
-      {props.isSearching 
-      ? <Preloader />
-      : 
-      <div className = "movies__result">  
-      <MoviesCardList cards={movieCards} />
-      <More/>
-      </div>}
+      {props.isSearching ? (
+        <Preloader />
+      ) : (
+        <div className="movies__result">
+          <MoviesCardList cards={movieCards} />
+          <More />
+        </div>
+      )}
     </div>
   );
 }

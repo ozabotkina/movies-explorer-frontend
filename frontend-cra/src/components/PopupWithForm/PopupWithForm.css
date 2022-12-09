@@ -17,7 +17,7 @@
 }
 
 .entrance__title {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 29.05px;
@@ -46,7 +46,7 @@
 }
 
 .entrance_form__item-title {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 12.01px;
@@ -74,7 +74,7 @@
   margin: 10px auto 0px;
   padding: 15px;
   box-sizing: border-box;
-  outline-color: #3DDC84;
+  outline-color: #3ddc84;
 }
 
 .entrance_form__input__err {
@@ -83,7 +83,7 @@
 
 .entrance_form__error {
   color: rgba(238, 52, 101, 1);
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 12.1px;
@@ -104,7 +104,7 @@
   background-color: rgba(66, 133, 244, 1);
   width: 100%;
   height: 45px;
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 16.94px;
@@ -124,7 +124,7 @@
 }
 
 .entrance_form__alternative__text {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.94px;
@@ -134,7 +134,7 @@
 }
 
 .entrance_form__alternative__link {
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.94px;
@@ -184,7 +184,7 @@
   .entrance_form_submit {
     margin: auto auto 14px;
     height: 45px;
-    font-family: "Inter", "Arial", "Helvetica", sans-serif;;
+    font-family: "Inter", "Arial", "Helvetica", sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 14.52px;

@@ -1,5 +1,4 @@
-
-function Preloader(){
+function Preloader() {
   return (
     <div className="preloader">
       <div className="preloader__container">
@@ -7,6 +6,6 @@ function Preloader(){
       </div>
     </div>
   );
-};
+}
 
 export default Preloader;
