@@ -43,7 +43,7 @@
   padding: 0px;
 }
 
-.header__registration-menu__register {
+.header__register {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: medium;
   font-weight: 500;
@@ -58,7 +58,7 @@
   align-items: center; */
 }
 
-.header__registration-menu__signin {
+.header__signin {
   background-color: rgba(61, 220, 132, 1);
   width: 76px;
   height: 32px;
@@ -95,7 +95,7 @@
   z-index: 3;
 }
 
-.header__navigation__link {
+.header__link {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -106,7 +106,7 @@
   margin: auto;
 }
 
-.header__navigation__link_active {
+.header__link_active {
   font-weight: 500;
 }
 
@@ -135,14 +135,14 @@
   .header {
     padding: 0 14px;
   }
-  .header__registration-menu__signin {
+  .header__signin {
     width: 54px;
     height: 26px;
     margin-left: 14px;
     font-size: 10px;
   }
 
-  .header__registration-menu__register {
+  .header__register {
     font-size: 10px;
   }
 

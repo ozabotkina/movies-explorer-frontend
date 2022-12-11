@@ -8,7 +8,7 @@
   margin: 0px auto 0;
 }
 
-.entrance_form__logo {
+.entrance-form__logo {
   width: 100%;
   margin: 70px auto 36px 0;
   display: flex;
@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-.entrance_form {
+.entrance-form {
   margin: 40px auto 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -37,7 +37,7 @@
   width: 100%;
 }
 
-.entrance_form__item {
+.entrance-form__item {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@
   padding: 0;
 }
 
-.entrance_form__item-title {
+.entrance-form__item-title {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 10px;
@@ -57,7 +57,7 @@
   margin: 0;
 }
 
-.entrance_form__input {
+.entrance-form__input {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -77,11 +77,11 @@
   outline-color: #3ddc84;
 }
 
-.entrance_form__input__err {
+.entrance-form__input__err {
   color: rgba(238, 52, 101, 1);
 }
 
-.entrance_form__error {
+.entrance-form__error {
   color: rgba(238, 52, 101, 1);
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -92,14 +92,14 @@
   text-align: left;
 }
 
-.entrance_form__lower {
+.entrance-form__lower {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.entrance_form_submit {
+.entrance-form__submit {
   margin: auto auto 16px;
   background-color: rgba(66, 133, 244, 1);
   width: 100%;
@@ -115,7 +115,7 @@
   border-radius: 3px;
 }
 
-.entrance_form__alternative {
+.entrance-form__alternative {
   display: flex;
   flex-direction: row;
   margin: 0 auto 70px;
@@ -123,7 +123,7 @@
   justify-content: center;
 }
 
-.entrance_form__alternative__text {
+.entrance-form__alt-text {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -133,7 +133,7 @@
   color: rgba(139, 139, 139, 1);
 }
 
-.entrance_form__alternative__link {
+.entrance-form__alt-link {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -149,7 +149,7 @@
     height: 1024px;
   }
 
-  .entrance_form__logo {
+  .entrance-form__logo {
     align-self: left;
     margin: 232px auto 36px 0;
     /* странное расстояние */
@@ -161,7 +161,7 @@
     height: 780px;
     width: 260px;
   }
-  .entrance_form__logo {
+  .entrance-form__logo {
     margin: 56px auto 46px 0;
     /* странное расстояние */
     justify-content: center;
@@ -171,7 +171,7 @@
     text-align: center;
   }
 
-  .entrance_form {
+  .entrance-form {
     margin: 80px auto 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -181,7 +181,7 @@
     width: 100%;
   }
 
-  .entrance_form_submit {
+  .entrance-form_submit {
     margin: auto auto 14px;
     height: 45px;
     font-family: "Inter", "Arial", "Helvetica", sans-serif;
@@ -190,16 +190,16 @@
     line-height: 14.52px;
   }
 
-  .entrance_form__alternative {
+  .entrance-form__alternative {
     margin: 0 auto 30px;
   }
 
-  .entrance_form__alternative__text {
+  .entrance-form__alt-text {
     font-size: 12px;
     line-height: 14.52px;
   }
 
-  .entrance_form__alternative__link {
+  .entrance-form__alt-link {
     font-size: 12px;
     line-height: 14.52px;
   }

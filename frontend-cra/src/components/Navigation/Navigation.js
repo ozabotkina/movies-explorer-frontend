@@ -3,7 +3,7 @@ import ProfileMenu from "../ProfileMenu/ProfileMenu";
 
 function Navigation(props) {
   return (
-    <div className={props.isOpen ? "navpanel navpanel__visible" : "navpanel"}>
+    <div className={props.isOpen ? "navpanel navpanel_visible" : "navpanel"}>
       <button className="navpanel__close-button" onClick={props.onCloseClick} />
       <nav className="navpanel__links">
         <NavLink

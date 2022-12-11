@@ -73,7 +73,7 @@
   row-gap: 14px;
 }
 
-.about-project__table__time {
+.about-project__time {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,19 +86,19 @@
   height: 100%;
 }
 
-.about-project__table__time_4 {
+.about-project__time_4 {
   color: rgba(255, 255, 255, 1);
   background-color: #303030;
 }
 
-.about-project__table__time_1 {
+.about-project__time_1 {
   color: rgba(0, 0, 0, 1);
   background-color: #3ddc84;
 }
 
 /* ДРУГОЙ ШРИФТ */
 
-.about-project__table__comment {
+.about-project__comment {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -142,11 +142,11 @@
     grid-template-columns: minmax(100px, 1fr) minmax(auto, 4fr);
     row-gap: 10px;
   }
-  .about-project__table__time {
+  .about-project__time {
     font-size: 11px;
     line-height: 13.3px;
   }
-  .about-project__table__comment {
+  .about-project__comment {
     font-size: 11px;
     line-height: 12.74px;
   }

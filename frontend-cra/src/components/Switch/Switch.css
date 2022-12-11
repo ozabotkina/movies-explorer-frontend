@@ -4,7 +4,7 @@
   margin-top: 30px;
 }
 
-.switch-area {
+.switch__area {
   width: 36px;
   box-sizing: border-box;
   max-height: 20px;
@@ -23,7 +23,7 @@
   background-color: #ffffff;
 }
 
-.switch-label {
+.switch__label {
   margin-left: 12px;
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -44,7 +44,7 @@
     line-height: 18px;
   }
 
-  .switch-label {
+  .switch__label {
     font-size: 11px;
   }
 }

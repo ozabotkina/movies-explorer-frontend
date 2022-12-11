@@ -9,40 +9,40 @@ function Register(props) {
       linktext="Войти"
       link="/signin"
     >
-      <div className="entrance_form__item">
-        <p className="entrance_form__item-title">Имя</p>
+      <div className="entrance-form__item">
+        <p className="entrance-form__item-title">Имя</p>
         <input
           type="text"
           id="name"
-          className="entrance_form__input"
+          className="entrance-form__input"
           placeholder="впишите имя"
           required
         />
-        <span className="entrance_form__error entrance_form__error_visible"></span>
+        <span className="entrance-form__error entrance-form__error_visible"></span>
       </div>
 
-      <div className="entrance_form__item">
-        <p className="entrance_form__item-title">E-mail</p>
+      <div className="entrance-form__item">
+        <p className="entrance-form__item-title">E-mail</p>
         <input
           type="email"
           id="name"
-          className="entrance_form__input"
+          className="entrance-form__input"
           placeholder="впишите почту"
           required
         />
-        <span className="entrance_form__error entrance_form__error_visible"></span>
+        <span className="entrance-form__error entrance-form__error_visible"></span>
       </div>
 
-      <div className="entrance_form__item">
-        <p className="entrance_form__item-title">Пароль</p>
+      <div className="entrance-form__item">
+        <p className="entrance-form__item-title">Пароль</p>
         <input
           type="password"
           id="name"
-          className="entrance_form__input"
+          className="entrance-form__input"
           placeholder="впишите пароль"
           required
         />
-        <span className="entrance_form__error entrance_form__error_visible">
+        <span className="entrance-form__error entrance-form__error_visible">
           Что-то пошло не так...
         </span>
       </div>

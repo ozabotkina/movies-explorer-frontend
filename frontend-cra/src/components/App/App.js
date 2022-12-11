@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="page">
-      <div className="topSection">
+      <div className="page__top-section">
         <Header
           colorClass={loggedIn ? "header" : "header header_notlogged"}
           loggedIn={loggedIn ? true : false}

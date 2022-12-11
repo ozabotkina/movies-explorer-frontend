@@ -4,23 +4,23 @@ import Logo from "../Logo/Logo";
 function PopupWithForm(props) {
   return (
     <form className="entrance">
-      <div className="entrance_form__top">
-        <div className="entrance_form__logo link">
+      <div className="entrance-form__top">
+        <div className="entrance-form__logo link">
           <Logo />
         </div>
 
         <h2 className="entrance__title">{props.title}</h2>
 
-        <div className="entrance_form">{props.children}</div>
+        <div className="entrance-form">{props.children}</div>
       </div>
-      <div className="entrance_form___lower">
-        <button className="entrance_form_submit link">{props.button}</button>
+      <div className="entrance-form__lower">
+        <button className="entrance-form__submit link">{props.button}</button>
 
-        <div className="entrance_form__alternative">
-          <p className="entrance_form__alternative__text">{props.text}</p>
+        <div className="entrance-form__alternative">
+          <p className="entrance-form__alt-text">{props.text}</p>
           <Link
             to={props.link}
-            className="entrance_form__alternative__link link"
+            className="entrance-form__alt-link link"
           >
             {props.linktext}
           </Link>

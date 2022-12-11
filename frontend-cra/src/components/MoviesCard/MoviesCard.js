@@ -20,12 +20,13 @@ function MoviesCard(props) {
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
+      <div className = "movie-card__button">
       {props.inSavedMovies ? (
         <UnsaveButton isMouseOver={isMouseOver} />
       ) : (
         <SaveButton isSaved={isSaved} isMouseOver={isMouseOver} />
       )}
-
+      </div>
       <img
         className="movie-card__image"
         src={props.card.trailer_pic}

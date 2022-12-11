@@ -29,13 +29,13 @@ function Header(props) {
         <div className="header__registration-menu">
           <Link
             to={"/signup"}
-            className="header__registration-menu__register link"
+            className="header__register link"
           >
             Регистрация
           </Link>
           <Link
             to={"/signin"}
-            className="header__registration-menu__signin link"
+            className="header__signin link"
           >
             Войти
           </Link>
@@ -46,15 +46,15 @@ function Header(props) {
         <nav className="header__navigation">
           <NavLink
             to={"/movies"}
-            className="header__navigation__link link"
-            activeClassName="header__navigation__link_active"
+            className="header__link link"
+            activeClassName="header__link_active"
           >
             Фильмы
           </NavLink>
           <NavLink
             to={"/saved-movies"}
-            className="header__navigation__link link"
-            activeClassName="header__navigation__link_active"
+            className="header__link link"
+            activeClassName="header__link_active"
           >
             Сохраненные фильмы
           </NavLink>

@@ -8,7 +8,10 @@ function SavedMovies(props) {
   return (
     <div className="movies">
       <SearchForm />
-      <MoviesCardList cards={savedCards} inSavedMovies={true} />
+      <MoviesCardList 
+        cards={savedCards} 
+        inSavedMovies={true} 
+      />
       <div className="saved-movies__devider"></div>
     </div>
   );

@@ -5,7 +5,7 @@ function SaveButton(props) {
         className={
           props.isSaved
             ? "save-status__saved save-status__saved_active"
-            : "saved "
+            : "save-status__saved "
         }
       ></div>
 

@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 
-.navpanel__visible {
+.navpanel_visible {
   display: flex;
 }
 

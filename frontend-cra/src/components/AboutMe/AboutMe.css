@@ -68,7 +68,7 @@
   line-height: 22px;
   color: rgba(255, 255, 255, 1);
   text-align: left;
-  margin-top: 26px;
+  margin: 26px 49px 0px 0px ;
 }
 
 .about-me__link {
@@ -155,6 +155,7 @@
     font-size: 11px;
     line-height: 16px;
     margin-bottom: 0px;
+    margin-right: 0px;
   }
 
   .about-me__link {
