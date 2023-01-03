@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 
-function ErrorAPI(props) {
+function PageNotFound(props) {
   return (
-    <div
-      className={props.isOpen ? "error-page error-page_opened" : "error-page "}
-    >
+    <div className={"error-page error-page_opened"}>
       <h2 className="error-page__title">
         404
         {/* {props.error.code} */}
@@ -20,4 +18,4 @@ function ErrorAPI(props) {
   );
 }
 
-export default ErrorAPI;
+export default PageNotFound;
