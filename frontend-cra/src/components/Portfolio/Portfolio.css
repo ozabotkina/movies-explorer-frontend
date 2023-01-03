@@ -1,0 +1,110 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 100px 70px 115px;
+  box-sizing: border-box;
+}
+
+.portfolio__title {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(160, 160, 160, 1);
+  text-align: left;
+  margin: auto auto 30px 0px;
+}
+
+.portfolio__text {
+  display: flex;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -1.2px;
+  text-decoration: none;
+  align-content: flex-end;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+
+.portfolio__item {
+  display: flex;
+  border-bottom: 1px solid #424242;
+  padding: 0px 0px 10px 0px;
+  margin: 20px 0 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.portfolio__item_last {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.portfolio__icon {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -1.2px;
+  text-decoration: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio {
+    padding: 91px 50px 80px;
+  }
+
+  .portfolio__text {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+  }
+  .portfolio__item {
+    border-bottom: 1px solid #ffffff;
+  }
+  .portfolio__item_last {
+    border-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio {
+    padding: 70px 14px 70px;
+  }
+
+  .portfolio__title {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio__text {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -0.72px;
+  }
+
+  .portfolio__icon {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+  }
+
+  .portfolio__item {
+    padding-bottom: 17px;
+  }
+
+  .portfolio__item_last {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}

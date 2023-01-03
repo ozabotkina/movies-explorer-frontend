@@ -1,0 +1,206 @@
+.entrance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: 396px;
+  height: 700px;
+  margin: 0px auto 0;
+}
+
+.entrance-form__logo {
+  width: 100%;
+  margin: 70px auto 36px 0;
+  display: flex;
+  justify-content: flex-start;
+  /* странное расстояние */
+}
+
+.entrance__title {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.entrance-form {
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat (3, 1fr);
+  row-gap: 10px;
+  width: 100%;
+}
+
+.entrance-form__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.entrance-form__item-title {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.01px;
+  color: rgba(139, 139, 139, 1);
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.entrance-form__input {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.73px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-align: left;
+  width: 100%;
+  height: 46px;
+  padding: 15px auto 15px 15px;
+  background-color: #2f2f2f;
+  border-radius: 8px;
+  border: none;
+  margin: 10px auto 0px;
+  padding: 15px;
+  box-sizing: border-box;
+  outline-color: #3ddc84;
+}
+
+.entrance-form__input__err {
+  color: rgba(238, 52, 101, 1);
+}
+
+.entrance-form__error {
+  color: rgba(238, 52, 101, 1);
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.1px;
+  margin: 10px auto 0px;
+  width: 100%;
+  text-align: left;
+}
+
+.entrance-form__lower {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.entrance-form__submit {
+  margin: auto auto 16px;
+  background-color: rgba(66, 133, 244, 1);
+  width: 100%;
+  height: 45px;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.94px;
+  text-align: center;
+  padding: auto;
+  color: rgba(255, 255, 255, 1);
+  border: 0;
+  border-radius: 3px;
+}
+
+.entrance-form__alternative {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 70px;
+  width: 100%;
+  justify-content: center;
+}
+
+.entrance-form__alt-text {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.94px;
+  text-align: right;
+  margin: 0;
+  color: rgba(139, 139, 139, 1);
+}
+
+.entrance-form__alt-link {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.94px;
+  text-align: left;
+  margin: 0 0 0 6px;
+  color: rgba(66, 133, 244, 1);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .entrance {
+    height: 1024px;
+  }
+
+  .entrance-form__logo {
+    align-self: left;
+    margin: 232px auto 36px 0;
+    /* странное расстояние */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .entrance {
+    height: 780px;
+    width: 260px;
+  }
+  .entrance-form__logo {
+    margin: 56px auto 46px 0;
+    /* странное расстояние */
+    justify-content: center;
+  }
+
+  .entrance__title {
+    text-align: center;
+  }
+
+  .entrance-form {
+    margin: 80px auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: 1fr;
+    row-gap: 10px;
+    width: 100%;
+  }
+
+  .entrance-form_submit {
+    margin: auto auto 14px;
+    height: 45px;
+    font-family: "Inter", "Arial", "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.52px;
+  }
+
+  .entrance-form__alternative {
+    margin: 0 auto 30px;
+  }
+
+  .entrance-form__alt-text {
+    font-size: 12px;
+    line-height: 14.52px;
+  }
+
+  .entrance-form__alt-link {
+    font-size: 12px;
+    line-height: 14.52px;
+  }
+}

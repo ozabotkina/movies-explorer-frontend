@@ -1,0 +1,30 @@
+.profile-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-link__text {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  margin: auto 17px auto auto;
+}
+
+.profile-link__icon {
+  margin: auto;
+  width: 12px;
+  height: 13px;
+  padding: 0 6px;
+}
+
+.profile-link__placeholder {
+  background-color: #313131;
+  border-radius: 4px;
+  width: 26px;
+  height: 30px;
+  display: flex;
+}
