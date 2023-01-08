@@ -5,7 +5,7 @@ https://disk.yandex.ru/d/vLqdP7YairWDlw
 https://ozdiploma.nomoredomains.club/ 
 
 пул реквест
-https://github.com/ozabotkina/movies-explorer-frontend/pull/2git 
+https://github.com/ozabotkina/movies-explorer-frontend/pull/2
 
 
 
