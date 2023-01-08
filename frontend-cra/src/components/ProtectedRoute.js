@@ -7,7 +7,7 @@ export function ProtectedRoute({ component: Component, ...props }) {
 
   return (
     <Route>
-      {() => (loggedIn ? <Component {...props} /> : <Redirect to="./signin" />)}
+      {() => (loggedIn ? <Component {...props} /> : <Redirect to="./" />)}
     </Route>
   );
 }

@@ -5,20 +5,12 @@ import { MyMoviesContext } from "../../context/DataBasesContext";
 import { filterMovies } from "../MoviesFilter";
 
 function SavedMovies(props) {
-  const latestSearch = JSON.parse(localStorage.getItem("latestSearchSaved"));
-  const [lastPhrase, setPhrase] = React.useState(
-    latestSearch ? latestSearch.phrase : ""
-  );
-  const [lastShort, setShortStatus] = React.useState(
-    latestSearch ? latestSearch.shortOn : ""
-  );
+  // const latestSearch = JSON.parse(localStorage.getItem("latestSearchSaved"));
+  const [lastPhrase, setPhrase] = React.useState("");
+  const [lastShort, setShortStatus] = React.useState("");
 
   const myMovies = React.useContext(MyMoviesContext);
-  const [movieCards, setMovieCards] = React.useState(
-    latestSearch ? latestSearch.foundMovies : myMovies
-  );
-
-  console.log(latestSearch);
+  const [movieCards, setMovieCards] = React.useState(myMovies);
 
   function findMovies(movies, shortOn, phrase) {
     const foundMovies = filterMovies(movies, shortOn, phrase);

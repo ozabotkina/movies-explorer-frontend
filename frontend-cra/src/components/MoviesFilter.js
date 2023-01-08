@@ -1,9 +1,11 @@
+import { SHORT_MOVIE } from "../utils/constants";
+
 export function filterMovies(movies, shortOn, phrase) {
   const foundMovies = shortOn
     ? movies.filter(
         (item) =>
           (item.nameRU.toLowerCase().includes(phrase.toLowerCase()) === true) &
-          (item.duration <= 40)
+          (item.duration <= { SHORT_MOVIE })
       )
     : movies.filter(
         (item) =>

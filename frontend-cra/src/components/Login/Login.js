@@ -2,6 +2,7 @@ import React from "react";
 import PopupWithForm from "../PopupWithForm/PopupWithForm";
 import { authorize } from "../../utils/MainAPI";
 import { withRouter } from "react-router-dom";
+import { regEmail } from "../../utils/regex";
 
 function Login(props) {
   const [isError, setError] = React.useState(false);
@@ -10,19 +11,24 @@ function Login(props) {
   const [emailValid, setEmailValidity] = React.useState(false);
   const [emailError, setEmailError] = React.useState(false);
   const [password, setPassword] = React.useState("");
-  const [passwordValid, setEPasswordValidity] = React.useState(false);
+  const [passwordValid, setPasswordValidity] = React.useState(false);
   const [formValid, setFormValidity] = React.useState(false);
+  const [formDisabled, setDisabled] = React.useState(false);
 
   function handleEmailChange(e) {
     setEmail(e.target.value);
     let valid = checkVaildity(e.target);
     setEmailValidity(valid);
     setEmailError(!valid);
+    setError(false);
+    checkFormValidity();
   }
 
   function handlePasswordChange(e) {
     setPassword(e.target.value);
-    setEPasswordValidity(checkVaildity(e.target));
+    setPasswordValidity(checkVaildity(e.target));
+    setError(false);
+    checkFormValidity();
   }
 
   function checkVaildity(target) {
@@ -45,13 +51,14 @@ function Login(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    setDisabled(true);
     authorize(email, password)
       .then((data) => {
         if (data.token) {
           setEmail("");
           setPassword("");
           props.handleLogin();
-          props.history.push("/");
+          props.history.push("/movies");
         } else {
           // props.onFail();
           setError(true);
@@ -62,10 +69,13 @@ function Login(props) {
 
       .catch((err) => {
         setError(true);
-        setEmail("");
-        setPassword("");
+        // setEmail("");
+        // setPassword("");
         setMessage(`Ошибка ${err}`);
         setFormValidity(false);
+      })
+      .finally(() => {
+        setDisabled(false);
       });
   }
 
@@ -82,6 +92,7 @@ function Login(props) {
       linktext="Регистрация"
       link="/signup"
       formValid={formValid}
+      isDisabled={formDisabled}
       onSubmit={formValid ? handleSubmit : undefined}
     >
       <div className="entrance-form__item">
@@ -90,11 +101,13 @@ function Login(props) {
           type="email"
           id="email"
           value={email}
+          pattern={regEmail}
           onChange={handleEmailChange}
           valid={emailValid.toString()}
           className="entrance-form__input"
           placeholder="впишите почту"
           required
+          disabled={formDisabled}
         />
         <span
           className={
@@ -118,6 +131,7 @@ function Login(props) {
           className="entrance-form__input"
           placeholder="впишите пароль"
           required
+          disabled={formDisabled}
         />
         <span
           className={

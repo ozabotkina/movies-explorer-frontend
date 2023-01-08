@@ -55,6 +55,7 @@ function App(props) {
         setLoggedStatus(false);
         localStorage.clear();
         localStorage.setItem("logged", "false");
+        setMyMovies("");
       })
 
       .catch((err) => console.log(err));
@@ -140,6 +141,17 @@ function App(props) {
         console.log(err);
       });
   }, []);
+
+  React.useEffect(() => {
+    getMovies()
+      .then((data) => {
+        setMyMovies(Array.from(data));
+        return data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [currentUser]);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>

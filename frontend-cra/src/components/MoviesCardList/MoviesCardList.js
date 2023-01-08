@@ -1,10 +1,10 @@
 import MoviesCard from "../MoviesCard/MoviesCard";
 import React from "react";
 import {
-  desktopParams,
-  ipadParams,
-  mobileParams,
-} from "../../utils/movieListParam";
+  DESKTOP_PARAMS,
+  IPAD_PARAMS,
+  MOBILE_PARAMS,
+} from "../../utils/constants";
 
 function MoviesCardList(props) {
   const [width, setWidth] = React.useState([window.innerWidth]);
@@ -32,19 +32,19 @@ function MoviesCardList(props) {
   React.useEffect(() => {
     props.isLimited
       ? setMaxCards(
-          width > desktopParams.minwidth
-            ? desktopParams.maxCards
-            : width > ipadParams.minwidth
-            ? ipadParams.maxCards
-            : mobileParams.maxCards
+          width > DESKTOP_PARAMS.minwidth
+            ? DESKTOP_PARAMS.maxCards
+            : width > IPAD_PARAMS.minwidth
+            ? IPAD_PARAMS.maxCards
+            : MOBILE_PARAMS.maxCards
         )
       : setMaxCards(props.cards.length);
     setMaxRow(
-      width > desktopParams.minwidth
-        ? desktopParams.maxRow
-        : width > ipadParams.minwidth
-        ? ipadParams.maxRow
-        : mobileParams.maxRow
+      width > DESKTOP_PARAMS.minwidth
+        ? DESKTOP_PARAMS.maxRow
+        : width > IPAD_PARAMS.minwidth
+        ? IPAD_PARAMS.maxRow
+        : MOBILE_PARAMS.maxRow
     );
   }, [width, props.isLimited, props.cards.length]);
 

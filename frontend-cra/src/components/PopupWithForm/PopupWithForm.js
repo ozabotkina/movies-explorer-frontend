@@ -17,10 +17,12 @@ function PopupWithForm(props) {
         <button
           className={
             props.formValid
-              ? "entrance-form__submit link"
+              ? props.isDisabled
+                ? "entrance-form__submit entrance-form__submit_inactive"
+                : "entrance-form__submit link"
               : "entrance-form__submit entrance-form__submit_inactive"
           }
-          disabled={props.formValid ? false : true}
+          disabled={props.formValid ? (props.isDisabled ? true : false) : true}
           onClick={props.formValid ? props.onSubmit : undefined}
         >
           {props.button}

@@ -5,6 +5,7 @@ import Preloader from "../Preloader/Preloader";
 import React from "react";
 import { moviesApi } from "../../utils/MoviesApi";
 import { filterMovies } from "../MoviesFilter";
+import { LIST_HIDDEN, LIST_SEEN } from "../../utils/constants";
 
 function Movies(props) {
   const latestSearch = JSON.parse(localStorage.getItem("latestSearchAll"));
@@ -21,6 +22,8 @@ function Movies(props) {
   );
   const [clicksCounter, setCounter] = React.useState(1);
   const [isMore, setMore] = React.useState(false);
+
+  const [listClass, setListClass] = React.useState(LIST_HIDDEN);
 
   function findMovies(movies, shortOn, phrase) {
     const foundMovies = filterMovies(movies, shortOn, phrase);
@@ -55,9 +58,13 @@ function Movies(props) {
           console.log(err);
           setError(true);
         })
-        .finally(() => setIsSearching(false));
+        .finally(() => {
+          setIsSearching(false);
+          setListClass(LIST_SEEN);
+        });
     } else {
       findMovies(storedMovies, shortOn, phrase);
+      setListClass(LIST_SEEN);
     }
   }
 
@@ -67,6 +74,11 @@ function Movies(props) {
   function handleLongList(status) {
     setMore(status);
   }
+
+  React.useEffect(() => {
+    setListClass(movieCards === "" ? LIST_HIDDEN : LIST_SEEN);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   React.useEffect(() => {
     props.setFooter();
@@ -83,7 +95,7 @@ function Movies(props) {
       {isSearching ? (
         <Preloader />
       ) : (
-        <div className="movies__result">
+        <div className={listClass}>
           <MoviesCardList
             cards={movieCards}
             isError={isError}

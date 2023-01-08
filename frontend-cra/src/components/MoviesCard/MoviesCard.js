@@ -23,8 +23,8 @@ function MoviesCard(props) {
 
   React.useEffect(() => {
     checkSaved();
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [myMovies]);
 
   function handleMouseOver() {

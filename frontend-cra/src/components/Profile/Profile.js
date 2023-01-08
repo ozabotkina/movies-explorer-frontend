@@ -1,6 +1,7 @@
 import React from "react";
 import { CurrentUserContext } from "../../context/CurrentUserContext";
 import { updateUser } from "../../utils/MainAPI";
+import { regEmail, regName } from "../../utils/regex";
 
 function Profile(props) {
   const currentUser = React.useContext(CurrentUserContext);
@@ -14,6 +15,7 @@ function Profile(props) {
   const [formValid, setFormValidity] = React.useState(false);
 
   const [showAlert, setAlert] = React.useState("");
+  const [formDisabled, setDisabled] = React.useState(false);
 
   function handleNameChange(e) {
     setName(e.target.value);
@@ -22,6 +24,7 @@ function Profile(props) {
     e.target.value === currentUser.name ? setChanges(false) : setChanges(true);
 
     setAlert(false);
+    checkFormValidity();
   }
 
   function handleEmailChange(e) {
@@ -31,10 +34,12 @@ function Profile(props) {
     e.target.value === currentUser.email ? setChanges(false) : setChanges(true);
 
     setAlert(false);
+    checkFormValidity();
   }
 
   function handleSubmit(e) {
     e.preventDefault();
+    setDisabled(true);
     updateUser(name, email)
       .then((data) => {
         if (data) {
@@ -48,6 +53,10 @@ function Profile(props) {
       })
       .catch((err) => {
         setAlert(`Произошла ошибка ${err}`);
+        setFormValidity(false);
+      })
+      .finally(() => {
+        setDisabled(false);
       });
   }
 
@@ -95,11 +104,12 @@ function Profile(props) {
             }
             type="text"
             id="username"
-            pattern="[A-Za-zА-Яа-яЁё\s\-]{2,30}"
+            pattern={regName}
             value={name}
             onChange={handleNameChange}
             valid={nameValid.toString()}
             required
+            disabled={formDisabled}
           />
         </div>
 
@@ -116,9 +126,11 @@ function Profile(props) {
             type="email"
             id="usermail"
             value={email}
+            pattern={regEmail}
             onChange={handleEmailChange}
             valid={emailValid.toString()}
             required
+            disabled={formDisabled}
           />
         </div>
       </form>
@@ -129,10 +141,12 @@ function Profile(props) {
         <button
           className={
             formValid
-              ? "profile__update link"
+              ? formDisabled
+                ? "profile__update profile__update_inactive"
+                : "profile__update link"
               : "profile__update profile__update_inactive"
           }
-          disabled={formValid ? false : true}
+          disabled={formValid ? (formDisabled ? true : false) : true}
           onClick={handleSubmit}
         >
           Редактировать
