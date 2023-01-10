@@ -16,6 +16,11 @@
   padding: 2px;
 }
 
+.switch__area_off {
+  justify-content: flex-start;
+  background-color: #2f2f2f;
+}
+
 .switch__button {
   width: 16px;
   height: 16px;

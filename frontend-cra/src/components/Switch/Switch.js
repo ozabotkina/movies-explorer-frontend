@@ -1,7 +1,11 @@
-function Switch() {
+function Switch(props) {
   return (
-    <div className="switch">
-      <div className="switch__area">
+    <div className="switch" onClick={props.handleClick}>
+      <div
+        className={
+          props.isOn ? "switch__area" : "switch__area switch__area_off"
+        }
+      >
         <div className="switch__button"></div>
       </div>
       <div className="switch__label">Короткометражки</div>

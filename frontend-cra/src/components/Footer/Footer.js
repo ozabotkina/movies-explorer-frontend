@@ -1,5 +1,5 @@
 function Footer(props) {
-  return (
+  return props.withFooter ? (
     <footer className="footer">
       <div className="footer__text">
         Учебный проект Яндекс.Практикум х BeatFilm.
@@ -26,6 +26,8 @@ function Footer(props) {
         </nav>
       </div>
     </footer>
+  ) : (
+    ""
   );
 }
 

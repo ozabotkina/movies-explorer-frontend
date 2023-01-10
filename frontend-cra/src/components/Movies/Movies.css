@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.movies__result_hidden {
+  display: none;
+}
+
 @media screen and (max-width: 1279px) {
   .movies {
     padding: 0 30px;

@@ -1,3 +1,4 @@
+import React from "react";
 import menuPath from "../../images/menu-icon.svg";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
@@ -5,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import ProfileMenu from "../ProfileMenu/ProfileMenu";
 
 function Header(props) {
-  return (
+  return props.withHeader ? (
     <header className={props.colorClass}>
       <div className="header__logo link">
         <Logo />
@@ -27,16 +28,10 @@ function Header(props) {
         </>
       ) : (
         <div className="header__registration-menu">
-          <Link
-            to={"/signup"}
-            className="header__register link"
-          >
+          <Link to={"/signup"} className="header__register link">
             Регистрация
           </Link>
-          <Link
-            to={"/signin"}
-            className="header__signin link"
-          >
+          <Link to={"/signin"} className="header__signin link">
             Войти
           </Link>
         </div>
@@ -61,6 +56,8 @@ function Header(props) {
         </nav>
       )}
     </header>
+  ) : (
+    ""
   );
 }
 

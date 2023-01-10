@@ -30,7 +30,19 @@
   margin: 0;
 }
 
-.profile__item__title {
+.profile__alert {
+  width: 410px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+  min-height: 25px;
+  color: #ffffff;
+  margin: 95px auto 0px;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+}
+
+.profile__name {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 11px;
@@ -40,7 +52,7 @@
   margin: 0;
 }
 
-.ptofile__item__value {
+.profile__value {
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 11px;
@@ -48,6 +60,12 @@
   color: #ffffff;
   text-align: right;
   margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.profile__value_error {
+  color: rgba(238, 52, 101, 1);
 }
 
 .profile__underscore {
@@ -57,7 +75,7 @@
 }
 
 .profile__nav {
-  margin: 220px auto 70px;
+  margin: 100px auto 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +90,12 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.profile__update_inactive {
+  color: #2f2f2f;
 }
 
 .profile__exit {
@@ -83,6 +107,8 @@
   text-align: center;
   margin: 16px 0 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -98,7 +124,7 @@
   }
 
   .profile__nav {
-    margin: 210px auto 269px;
+    margin: 90px auto 269px;
   }
 }
 
@@ -114,8 +140,12 @@
     width: 260px;
   }
 
+  .profile__alert {
+    width: 260px;
+  }
+
   .profile__nav {
-    margin: 379px auto 40px;
+    margin: 259px auto 40px;
   }
 
   .profile__update {
